@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@keyframes floatOrb1 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(40px, -50px) scale(1.08);
+  }
+  66% {
+    transform: translate(-30px, 30px) scale(0.95);
+  }
+}
+
+@keyframes floatOrb2 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(-50px, 40px) scale(0.92);
+  }
+  66% {
+    transform: translate(35px, -35px) scale(1.06);
+  }
+}
+
+@keyframes floatOrb3 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(30px, 40px) scale(1.1);
+  }
+}
+
+@keyframes laserScan {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(1100%);
+    opacity: 0;
+  }
+}
+
+@keyframes gridDrift {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 48px 48px;
+  }
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    filter: drop-shadow(0 0 15px rgba(225, 29, 72, 0.4));
+  }
+  50% {
+    opacity: 0.9;
+    filter: drop-shadow(0 0 30px rgba(225, 29, 72, 0.8));
+  }
+}
+
+.animate-float-orb-1 {
+  animation: floatOrb1 18s ease-in-out infinite;
+}
+
+.animate-float-orb-2 {
+  animation: floatOrb2 22s ease-in-out infinite;
+}
+
+.animate-float-orb-3 {
+  animation: floatOrb3 15s ease-in-out infinite;
+}
+
+.animate-laser-scan {
+  animation: laserScan 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-grid-drift {
+  animation: gridDrift 20s linear infinite;
+}
+
+.animate-spin-slow {
+  animation: spinSlow 35s linear infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+

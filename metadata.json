@@ -1,0 +1,6 @@
+{
+  "name": "BAYBURT ÖZ-KA İNŞAAT CEK KAYIT",
+  "description": "Bayburt Öz-Ka İnşaat Çek ve Evrak Kayıt Sistemi",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
